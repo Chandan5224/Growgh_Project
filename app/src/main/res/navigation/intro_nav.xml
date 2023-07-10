@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/intro_nav"
+    app:startDestination="@id/intro1">
+
+    <fragment
+        android:id="@+id/intro1"
+        android:name="com.example.growgh_project.fragment.intro1"
+        android:label="fragment_intro1"
+        tools:layout="@layout/fragment_intro1" >
+        <action
+            android:id="@+id/action_intro1_to_intro2"
+            app:destination="@id/intro2" />
+        <action
+            android:id="@+id/action_intro1_to_home"
+            app:destination="@id/home" />
+    </fragment>
+    <fragment
+        android:id="@+id/intro2"
+        android:name="com.example.growgh_project.fragment.intro2"
+        android:label="fragment_intro2"
+        tools:layout="@layout/fragment_intro2" >
+        <action
+            android:id="@+id/action_intro2_to_intro3"
+            app:destination="@id/intro3" />
+        <action
+            android:id="@+id/action_intro2_to_home"
+            app:destination="@id/home" />
+    </fragment>
+    <fragment
+        android:id="@+id/intro3"
+        android:name="com.example.growgh_project.fragment.intro3"
+        android:label="fragment_intro3"
+        tools:layout="@layout/fragment_intro3" >
+        <action
+            android:id="@+id/action_intro3_to_home"
+            app:destination="@id/home" />
+    </fragment>
+    <fragment
+        android:id="@+id/home"
+        android:name="com.example.growgh_project.fragment.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home_to_feeds"
+            app:destination="@id/feeds" />
+        <action
+            android:id="@+id/action_home_to_upload"
+            app:destination="@id/upload" />
+    </fragment>
+    <fragment
+        android:id="@+id/feeds"
+        android:name="com.example.growgh_project.fragment.feeds"
+        android:label="fragment_feeds"
+        tools:layout="@layout/fragment_feeds" />
+    <fragment
+        android:id="@+id/upload"
+        android:name="com.example.growgh_project.fragment.upload"
+        android:label="fragment_upload"
+        tools:layout="@layout/fragment_upload" />
+</navigation>
