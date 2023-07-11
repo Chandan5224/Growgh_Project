@@ -18,7 +18,7 @@ import com.example.growgh_project.databinding.FragmentFeedsBinding
 
 const val BASE_URL = "https://hargrimm-wikihow-v1.p.rapidapi.com/images?count=10"
 
-class feeds : Fragment() {
+class Feeds : Fragment() {
 
     lateinit var mAdapter: FeedsAdapter
     var urlList: ArrayList<String> = ArrayList()
@@ -57,7 +57,6 @@ class feeds : Fragment() {
                 BASE_URL,
                 null,
                 Response.Listener { response ->
-                    Log.e("TAGG", response.getString("1"))
                     urlList.add(response.getString("1"))
                     urlList.add(response.getString("2"))
                     urlList.add(response.getString("3"))

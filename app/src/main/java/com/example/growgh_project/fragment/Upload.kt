@@ -1,25 +1,16 @@
 package com.example.growgh_project.fragment
 
-import android.app.AlertDialog
 import android.os.Bundle
 import android.view.LayoutInflater
-import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
-import androidx.activity.OnBackPressedCallback
 import androidx.activity.result.contract.ActivityResultContracts
-import androidx.appcompat.app.ActionBar
-import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import androidx.navigation.Navigation
-import androidx.navigation.findNavController
-import com.example.growgh_project.MainActivity
 import com.example.growgh_project.R
 import com.example.growgh_project.databinding.FragmentUploadBinding
-import kotlinx.coroutines.flow.combine
 
 
-class upload : Fragment() {
+class Upload : Fragment() {
 
     private lateinit var binding: FragmentUploadBinding
 
