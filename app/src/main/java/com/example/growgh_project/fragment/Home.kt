@@ -23,6 +23,9 @@ class Home : Fragment() {
         binding.btnFeeds.setOnClickListener {
             binding.root.findNavController().navigate(R.id.action_home_to_feeds)
         }
+        binding.btnUpload.setOnClickListener {
+            binding.root.findNavController().navigate(R.id.action_home_to_upload)
+        }
         return binding.root
     }
 }
